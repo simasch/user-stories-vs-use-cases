@@ -9,7 +9,7 @@
 **Trigger:** The Participant can no longer attend a course  
 **Status:** Approved  
 
-**Requirements:** [FR-004, FR-005, NFR-002, C-002, C-003](../requirements.md)
+**Requirements:** [NFR-002, C-002, C-003](../requirements.md)
 
 ## Preconditions
 

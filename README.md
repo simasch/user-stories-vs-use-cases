@@ -5,15 +5,17 @@ that nobody asked for. Use cases close these gaps before the code is written.
 
 This repository makes the claim testable. It contains the same application twice:
 
-| Folder                           | Specification                                                         |
-|----------------------------------|-----------------------------------------------------------------------|
-| [`user-stories/`](user-stories)  | User stories with acceptance criteria, glossary                       |
-| [`use-cases/`](use-cases)        | The same user stories, acceptance criteria, and glossary, **plus** use case specifications |
+| Folder                           | Functional specification                  |
+|----------------------------------|-------------------------------------------|
+| [`user-stories/`](user-stories)  | User stories with acceptance criteria     |
+| [`use-cases/`](use-cases)        | Use case specifications, no user stories  |
 
-Everything else is identical: the code skeleton, the build, the `CLAUDE.md` with the instructions for the agent.
+Everything else is identical: the vision, the non-functional requirements, the constraints, the glossary, the code
+skeleton, the build, the `CLAUDE.md` with the instructions for the agent.
 
 ```bash
-diff -r user-stories use-cases
+diff -rq user-stories use-cases -x target -x node_modules -x generated
+# Files user-stories/docs/requirements.md and use-cases/docs/requirements.md differ
 # Only in use-cases/docs: use_cases
 # Only in use-cases/docs: use_cases.puml
 ```
@@ -37,8 +39,8 @@ management, and a hello world view. The agent builds the rest.
 The details are in [experiment/protocol.md](experiment/protocol.md), the form for each run is
 [experiment/scoring.md](experiment/scoring.md).
 
-Of the 45 rules in the oracle, 14 are in the user stories and acceptance criteria. 31 are only in the use cases:
-boundaries, alternative flows, and rules that come up when you ask "what happens if ...?".
+Of the 45 rules in the oracle, 14 are in both specifications. 31 are only in the use cases: boundaries, alternative
+flows, and rules that come up when you ask "what happens if ...?".
 
 ## Results
 

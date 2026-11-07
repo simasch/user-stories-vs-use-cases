@@ -9,7 +9,7 @@
 **Trigger:** The Participant wants to attend a course  
 **Status:** Approved  
 
-**Requirements:** [FR-002, FR-003, FR-004, NFR-002, C-003](../requirements.md)
+**Requirements:** [NFR-002, C-003](../requirements.md)
 
 ## Preconditions
 

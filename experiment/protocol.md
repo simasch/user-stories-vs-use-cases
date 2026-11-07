@@ -47,7 +47,7 @@ Copy [scoring.md](scoring.md) for each run and fill it in.
 
 | Metric                  | Meaning                                                                  |
 |-------------------------|--------------------------------------------------------------------------|
-| Oracle match (S rules)  | Share of `✔` among the rules written in the user stories                 |
+| Oracle match (S rules)  | Share of `✔` among the rules written in both specifications              |
 | Oracle match (U rules)  | Share of `✔` among the rules written only in the use cases               |
 | Silent assumptions      | Number of `✘` that are not recorded in `docs/assumptions.md`             |
 | Recorded assumptions    | Number of entries in `docs/assumptions.md`                               |

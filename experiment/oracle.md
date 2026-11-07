@@ -8,8 +8,11 @@ the project folder.
 
 Column **In** says where the rule is written down:
 
-- **S** = in the user stories and acceptance criteria (`docs/requirements.md`, present in both projects)
+- **S** = in both specifications: the user stories and acceptance criteria of the user-stories project
+  (`docs/requirements.md`) and the use cases of the use-cases project (`docs/use_cases/`)
 - **U** = only in the use cases (`docs/use_cases/`, present only in the use-cases project)
+
+For **S** rules, column **Source** names the place in the user-stories project.
 
 ## Create Course
 

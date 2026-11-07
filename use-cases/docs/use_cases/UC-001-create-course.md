@@ -9,7 +9,7 @@
 **Trigger:** The Course Administrator decides to offer a new course  
 **Status:** Approved  
 
-**Requirements:** [FR-001, NFR-002, C-003](../requirements.md)
+**Requirements:** [NFR-002, C-003](../requirements.md)
 
 ## Preconditions
 

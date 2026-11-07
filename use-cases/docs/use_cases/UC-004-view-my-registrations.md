@@ -9,7 +9,7 @@
 **Trigger:** The Participant wants to check own registrations  
 **Status:** Approved  
 
-**Requirements:** [FR-006, NFR-002](../requirements.md)
+**Requirements:** [NFR-002](../requirements.md)
 
 ## Preconditions
 
