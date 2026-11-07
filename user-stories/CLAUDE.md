@@ -18,7 +18,7 @@ Implement the course registration application specified in `docs/`. Read every f
 - As the last step, after `./mvnw verify` passes, write `session-log.md` in the project root (not in `docs/`) with
   the session length (start, end, duration) and the token usage (input, output, cache creation, cache read, total).
   Take the values from the session transcript, do not estimate them: the newest `*.jsonl` file in this project's
-  folder under `~/.claude/projects/`, plus the transcripts of any subagents in its `<session id>/subagents/` folder.
+  folder under `$CLAUDE_CONFIG_DIR/projects/`, plus the transcripts of any subagents in its `<session id>/subagents/` folder.
   Use the first and last `timestamp` for the length and sum `message.usage` of the `assistant` entries, counting each
   `message.id` only once. If you continue after writing the file, update it before you stop again.
 

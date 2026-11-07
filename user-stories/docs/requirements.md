@@ -9,14 +9,14 @@ cancel them.
 
 ## Functional Requirements (FR)
 
-| ID     | Title                 | User Story                                                                                                           | Priority | Status |
-|--------|-----------------------|----------------------------------------------------------------------------------------------------------------------|----------|--------|
-| FR-001 | Create Course         | As a course administrator, I want to create a course so that participants can register for it.                       | High     | Open   |
-| FR-002 | Browse Courses        | As a participant, I want to see the courses that are open for registration so that I can choose one.                | High     | Open   |
-| FR-003 | Register for Course   | As a participant, I want to register for a course so that I have a seat.                                             | High     | Open   |
-| FR-004 | Waiting List          | As a participant, I want to be put on the waiting list when a course is full so that I can still get a seat later.   | High     | Open   |
-| FR-005 | Cancel Registration   | As a participant, I want to cancel my registration so that my seat is free for somebody else.                        | High     | Open   |
-| FR-006 | View My Registrations | As a participant, I want to see my registrations so that I know which courses I attend.                              | Medium   | Open   |
+| ID     | Title                 | User Story                                                                                                           | Status   |
+|--------|-----------------------|----------------------------------------------------------------------------------------------------------------------|----------|
+| FR-001 | Create Course         | As a course administrator, I want to create a course so that participants can register for it.                       | Approved |
+| FR-002 | Browse Courses        | As a participant, I want to see the courses that are open for registration so that I can choose one.                | Approved |
+| FR-003 | Register for Course   | As a participant, I want to register for a course so that I have a seat.                                             | Approved |
+| FR-004 | Waiting List          | As a participant, I want to be put on the waiting list when a course is full so that I can still get a seat later.   | Approved |
+| FR-005 | Cancel Registration   | As a participant, I want to cancel my registration so that my seat is free for somebody else.                        | Approved |
+| FR-006 | View My Registrations | As a participant, I want to see my registrations so that I know which courses I attend.                              | Approved |
 
 ### Acceptance Criteria
 

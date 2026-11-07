@@ -34,15 +34,16 @@
 **Trigger:** The selected registration has the status Waiting (step 2)  
 **Flow:**
 
-1. System asks the Participant to confirm the cancellation without a fee (BR-003).
-2. Participant confirms the cancellation.
-3. System sets the status of the registration to Cancelled with a fee of 0.
-4. System moves every later registration on the waiting list up by one position.
-5. Use case ends.
+1. System checks that the course has not started (BR-001).
+2. System asks the Participant to confirm the cancellation without a fee (BR-003).
+3. Participant confirms the cancellation.
+4. System sets the status of the registration to Cancelled and stores the cancellation date and a fee of 0.
+5. System moves every later registration on the waiting list up by one position.
+6. Use case ends.
 
 ### A2: Course Already Started
 
-**Trigger:** The start date of the course is today or in the past (step 3)  
+**Trigger:** The start date of the course is today or in the past (step 3, A1 step 1)  
 **Flow:**
 
 1. System displays a message that the registration can no longer be cancelled.
@@ -50,7 +51,7 @@
 
 ### A3: Participant Keeps the Registration
 
-**Trigger:** Participant does not confirm the cancellation (step 5)  
+**Trigger:** Participant does not confirm the cancellation (step 5, A1 step 3)  
 **Flow:**
 
 1. System changes nothing.
