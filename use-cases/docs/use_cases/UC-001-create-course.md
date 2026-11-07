@@ -57,7 +57,7 @@
 **Flow:**
 
 1. System sets the registration deadline to the day before the start date (BR-004).
-2. Use case continues at step 6.
+2. Use case continues at step 5.
 
 ## Postconditions
 

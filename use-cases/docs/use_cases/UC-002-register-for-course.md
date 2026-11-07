@@ -21,7 +21,7 @@
 1. Participant opens the course list.
 2. System displays the open courses (BR-001) with title, start date, end date, location, price, and free seats (BR-007).
 3. Participant selects a course and chooses to register.
-4. System checks the registration against BR-002, BR-003, and BR-004 and finds a free seat.
+4. System checks in this order, and the first failed check decides the flow: the Participant holds no registration for this course with the status Confirmed or Waiting (BR-002), the registration deadline has not passed (BR-003), the course has a free seat, and the dates do not overlap with a confirmed registration (BR-004).
 5. System displays a summary with the course, the price, and the cancellation conditions (UC-003 BR-002).
 6. Participant confirms the registration.
 7. System checks again that a free seat is left.
@@ -31,7 +31,7 @@
 
 ### A1: Course Is Full
 
-**Trigger:** The course has no free seat (step 4)  
+**Trigger:** The course has no free seat and the waiting list is not full (BR-006) (step 4)  
 **Flow:**
 
 1. System informs the Participant that the course is full and shows the position the Participant would get on the waiting list (BR-005).
@@ -57,7 +57,7 @@
 
 ### A4: Overlapping Course
 
-**Trigger:** The Participant holds a confirmed registration for another course whose dates overlap (BR-004) (step 4)  
+**Trigger:** The course has a free seat and the Participant holds a confirmed registration for another course whose dates overlap (BR-004) (step 4)  
 **Flow:**
 
 1. System displays a message that names the overlapping course.
