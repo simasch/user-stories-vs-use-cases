@@ -1,0 +1,29 @@
+# CLAUDE.md
+
+## Task
+
+Implement the course registration application specified in `docs/`. Read every file in `docs/` before you start.
+
+## Rules
+
+- Work autonomously. Do not ask questions.
+- When the specification does not answer a question, make a decision and record it in `docs/assumptions.md`.
+  Write one entry per decision with: an id (A-001, A-002, ...), the requirement or document it belongs to, the
+  question, and your decision. Record every decision that changes the behavior a user sees or the data that is
+  stored. Do not record pure technical choices (class names, package layout).
+- Do not change any other file in `docs/`.
+- Write tests for the behavior you implement (Vaadin browserless tests for the UI, integration tests with
+  Testcontainers for the database access).
+- Finish when `./mvnw verify` passes.
+
+## Project
+
+- Generated from the [vaadin-jooq-archetype](https://github.com/martinellich/vaadin-jooq-archetype):
+  Spring Boot, Vaadin Flow, jOOQ, Flyway, PostgreSQL (Testcontainers), Playwright.
+- `./mvnw compile` starts a PostgreSQL container, runs the Flyway migrations in `src/main/resources/db/migration`,
+  and generates the jOOQ classes into `ch.martinelli.demo.courses.db`. Docker must be running.
+- Run the application from the IDE with `TestApplication`.
+- Users for development (see `src/test/resources/db/migration/afterMigrate.sql`): `user` / `user` (role USER),
+  `admin` / `admin` (roles USER and ADMIN).
+- `ArchitectureTest` enforces the layers (ui, domain) and the modules (core plus feature modules). Put the new feature
+  into its own module package, for example `ch.martinelli.demo.courses.course`.

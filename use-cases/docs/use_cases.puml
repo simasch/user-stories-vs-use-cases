@@ -1,0 +1,19 @@
+@startuml Use Cases Overview
+left to right direction
+
+actor "Course Administrator" as admin
+actor "Participant" as participant
+
+rectangle "Course Registration" {
+    usecase "UC-001\nCreate Course" as UC001
+    usecase "UC-002\nRegister for Course" as UC002
+    usecase "UC-003\nCancel Registration" as UC003
+    usecase "UC-004\nView My Registrations" as UC004
+}
+
+admin --> UC001
+participant --> UC002
+participant --> UC003
+participant --> UC004
+
+@enduml
